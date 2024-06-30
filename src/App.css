@@ -61,6 +61,14 @@
     background-color: #d1cecea8;
     border-radius: 5px;
 }
+
+.empty{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f26690;
+    margin-top: 2rem;
+}
+
 .todos h3{
     font-size: 1.2rem;
     color: black;

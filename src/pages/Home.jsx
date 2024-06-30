@@ -2,6 +2,7 @@ import { useContext } from "react"
 import TodoAppContext from "../contexts/TodoAppContext"
 const Home = () => {
   const {todos,setTodos,handleDelete} = useContext(TodoAppContext)
+  if(!todos.length > 0) return (<h1 className="empty">No todos</h1>)
   return (
     <div className="todos-container">
         {todos && todos.map(todo => (
