@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f26690;
+    color: white;
+}
+
+.header h1{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+}
+
+.header .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.header .links a:hover{
+   text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.header .links a{
+    color: white;
+    font-weight: medium;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+
+.todos-container{
+    height: 100vh;
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.todos{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #d1cecea8;
+    border-radius: 5px;
+}
+.todos h3{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+}
+.todos .completed{
+    text-decoration: line-through;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btns .completed-btn{
+    width: 25px;
+    height: 25px;
+    /* change the checkBox color */
+
+    cursor: pointer;
+    background: #f26690;
+}
+
+.btns .delete-btn{
+    padding:    0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    background: #f26690;
+}
+
+.btns .delete-btn:hover{
+    background: #f24c6e;
+}
+
+.todo-form-container{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.todo-form-container input{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.todo-add-btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    background: #f26690;
+}
+
+.todo-add-btn:hover{
+    background: #f24c6e;
+}
